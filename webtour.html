@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website-tour</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-5.2.1/dist/css/bootstrap.min.js">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour-0.12/css/bootstrap-tour-standalone.css">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1.min.js"></script>
+
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour-0.12.0/js/bootstrap-tour-0.12/standalone.min.js"></script>
+
+</head>
+<body class="container">
+    <br>
+
+    <header>
+        <h1>heading1</h1>
+    </header>
+   
+    <p id="e1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, ipsam debitis voluptates, impedit ducimus commodi ipsa quisquam alias deleniti minus cumque! Blanditiis dolores ad quis! Qui odio iure vel ea.
+    </p>
+    <h1>heading2</h1>
+    <p id="e2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae commodi fugiat voluptates, ipsam doloremque officia temporibus praesentium deleniti totam ab atque repellat dicta, laboriosam vero, quos iste velit quo minus.
+    </p>
+
+    <script>
+        // Instance the tour
+var tour1 = new Tour({
+  steps: [
+  {
+    element: "#e1",
+    title: "Title of first para",
+    content: "E1 :- Content of my step"
+  },
+  {
+    element: "#e2",
+    title: "Title of my second para",
+    content: "Click here to contact us.."
+  }
+]});
+
+// Initialize the tour
+tour1.init();
+
+// Start the tour
+tour.start();
+    </script>
+</body>
+</html>

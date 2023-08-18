@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>Drop Down menu</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+<style>
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+background-image: url(violet.jpg);
+background-size: cover;
+background-position: center;
+}
+.menu-bar{
+background: lightsalmon;
+text-align: center;
+}
+.menu-bar ul{
+display: inline-flex;
+list-style: none;
+color: whitesmoke;
+}
+.menu-bar ul li{
+width: 120px;
+margin: 15px;
+padding: 15px;
+}
+.active, .menu-bar ul li:hover{
+background:rgb(82, 141, 28);
+border-radius: 3px;
+}
+.sub-menu
+{
+display: none;
+}
+.menu-bar ul li:hover .sub-menu
+{
+display: block;
+position: absolute;
+background: lightgreen;
+margin-top: 15px;
+}
+.menu-bar ul li:hover .sub-menu ul {
+display: block;
+margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu ul li
+{
+width: 150;
+padding: 10;
+background: transparent;
+border-radius: 0;
+text-align: left;
+}
+.menu-bar ul li:hover .sub-menu ul li a:hover{
+color:crimson;
+}
+</style>
+</head>
+<body>
+<div class="menu-bar">
+<ul>
+<li class="active"><a href="#">Home</a></li>
+<li><a href="#">Courses</a>
+<div class="sub-menu">
+<ul>
+<li><a href="#">Big Data</a></li>
+<li><a href="#">Data Science</a></li>
+<li><a href="#">Full Stack Program</a></li>
+<li><a href="#">Data Science</a></li>
+<li><a href="#">AI-ML</a></li>
+</ul>
+</div>
+</li>
+<li><a href="#">Signup</a>
+<div class="sub-menu">
+<ul>
+<li><a href="#">Create Account</a></li>
+<li><a href="#">LogIn</a></li>
+</ul>
+</div>
+</li>
+<li><a href="#">Faqs</a></li>
+<li><a href="#">Contacts</a>
+<div class="sub-menu">
+<ul>
+<li><a href="#">US:+1-987-654-3210</a></li>
+<li><a href="#">IND:+91-123-456-7890</a></li>
+<li><a href="#">study2022@edureka.com</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<h4>
+<p>
+World’s #1 E-Learning Platform. Edureka's online training helps you land your dream job. Best-selling techn
+ology certification courses co-created with global industry experts.
+</p>
+</h4>
+<div class="container">
+<div class="row">
+<div class="col-mid-4">Cloud Computing</div>
+<div class="col-mid-4">Data Science</div>
+<div class="col-mid-4">Full Stack Program</div>
+<div class="col-mid-4">Devops</div>
+</div>
+</div>
+</body>
+</html>
